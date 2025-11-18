@@ -71,3 +71,33 @@ Primary UI elements:
 ---
 
 ## Project Structure
+├── index.html # Main stopwatch page
+
+├── laps.html # Full-screen laps page
+
+├── style.css # Styling, animations, layout
+
+├── script.js # Stopwatch logic and interactivity
+
+├── images/ # Backgrounds & assets (optional)
+
+└── README.md
+
+## How to Run
+
+### 1. Clone the repository:
+
+git clone https://github.com/parthp137/PRODIGY_WD_02.git
+cd PRODIGY_WD_02
+
+### 2. Open the project in a browser:
+- Open `index.html` directly, or
+
+### 3. Start a local server:
+python -m http.server 8000
+
+shell
+Copy code
+
+### 4. Open your browser and visit:
+http://localhost:8000
