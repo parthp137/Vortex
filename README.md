@@ -1,100 +1,73 @@
-# Vortex – Stopwatch Web Application
+# Vortex — Stopwatch Web Application
 
-Vortex is a front-end stopwatch project built using HTML, CSS, and JavaScript. It provides precise time tracking with lap recording, keyboard shortcuts, responsive UI design, and a modern animated interface.
+Vortex is a front-end stopwatch project built using HTML, CSS, and JavaScript.  
+It provides precise time tracking with lap recording, keyboard shortcuts, responsive UI design, and a polished animated interface.
 
-##Live Demo
+## Live Demo
 https://parthp137.github.io/PRODIGY_WD_02/
 
-##Features
+---
 
-##Stopwatch Functionality
--Start, pause, and reset the timer
--Lap time recording
--Accurate millisecond tracking
--Lap counter
--Full persistence using localStorage
--Supports continuous timing even if the page is refreshed
+## Features
 
-##Keyboard Shortcuts
--Spacebar → Start / Pause
--Enter → Create Lap
--R → Reset stopwatch
--L → Create Lap
+### Stopwatch
+- Start, pause and reset the timer
+- Accurate millisecond tracking using `performance.now()` and `requestAnimationFrame`
+- Lap time recording and lap counter
+- Persistent state using `localStorage` (laps and elapsed time survive page reload)
 
-##UI / UX Enhancements
--Large centered display
--Neon glow animations
--Animated background
--Lap drawer with smooth transitions
--Dedicated Laps page
--Scroll-reactive navigation bar
--Active link indicators
--Mobile responsive layout
+### Keyboard Shortcuts
+- **Space** — Start / Pause  
+- **Enter** — Record lap  
+- **L** — Record lap  
+- **R** — Reset
 
-Navigation System
--Fixed navbar
--Highlighted active section
--Mobile hamburger menu
--CSV export for laps
--Copy laps to clipboard
+### UI / UX
+- Large centered timer display
+- Animated background and neon accents
+- Lap drawer on the home page and a dedicated Laps page
+- Smooth transitions, ripple click effect and subtle visual polish
+- Responsive layout and mobile-friendly navigation
 
-#Tech Stack
-Frontend: HTML, CSS, JavaScript
+### Laps & Export
+- Laps shown in ascending order (Lap 1 = oldest)
+- Copy laps to clipboard
+- Export laps as CSV
 
-Tools: VS Code, Git, GitHub Pages
+---
 
-#Design Overview
-The application uses a modern, futuristic theme with:
+## Tech Stack
+**Frontend:** HTML, CSS, JavaScript  
+**Tools:** VS Code, Git, GitHub Pages
 
--Animated background
--Glass-morphism card design
--Dynamic neon accents
--Large readable timer
--Smooth transitions and ripple effects
--Separate pages for Stopwatch and Laps
+---
 
-The layout adapts seamlessly across desktop and mobile screens.
+## Design Overview
+The app uses a modern, dark theme with glass-morphism cards and neon accent colors.  
+Main design goals: clarity, responsiveness, and a focus on precise timing UX.
 
-#Limitations
--No backend integration
--Laps stored only in browser localStorage
--No multi-device sync
--No user login system
+Primary UI elements:
+- Centered stopwatch card with large readable digits  
+- Lap drawer pinned to bottom on the Home page  
+- Dedicated `laps.html` page for full-screen lap management  
+- Fixed top navigation with smooth scrolling and active state
 
-#Future Enhancements
--Cloud sync for laps
--Split time mode
--Countdown timer mode
--Export to JSON / Excel
--Sound alerts
--Theme toggle (Dark/Light)
+---
 
-Project Structure
-├── index.html         # Main stopwatch page
+## Limitations
+- No backend; data is stored only in browser `localStorage`  
+- Laps are local to the device/browser (no cross-device sync)  
+- No user accounts or server-side persistence
 
-├── laps.html          # Full-screen laps page
+---
 
-├── style.css          # Styling, animations, layout
+## Future Enhancements
+- Real-time sync between tabs/devices (cloud storage)  
+- Per-lap edit/delete actions  
+- Countdown and split-time modes  
+- Export to JSON / Excel  
+- Theme toggle (Light/Dark) and accessibility improvements
 
-├── script.js          # Stopwatch logic and interactivity
+---
 
-├── images/            # Backgrounds & assets (optional)
-
-└── README.md
-
-#How to Run
-
-###1. Clone the repository
-
-git clone https://github.com/parthp137/PRODIGY_WD_02.git
-cd PRODIGY_WD_02
-
-###2. Open in a browser
--Open index.html directly
-OR
-
-###3. Start a local server (optional)
-python -m http.server 8000
-
-##4. Visit in browser
-http://localhost:8000
+## Project Structure
