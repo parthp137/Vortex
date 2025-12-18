@@ -4,7 +4,7 @@ Vortex is a front-end stopwatch project built using HTML, CSS, and JavaScript.
 It provides precise time tracking with lap recording, keyboard shortcuts, responsive UI design, and a polished animated interface.
 
 ## Live Demo
-https://parthp137.github.io/PRODIGY_WD_02/
+https://parthp137.github.io/Vortex/
 
 ---
 
@@ -87,8 +87,8 @@ Primary UI elements:
 
 ### 1. Clone the repository:
 
-git clone https://github.com/parthp137/PRODIGY_WD_02.git
-cd PRODIGY_WD_02
+git clone https://github.com/parthp137/Vortex.git
+cd Vortex
 
 ### 2. Open the project in a browser:
 - Open `index.html` directly, or
